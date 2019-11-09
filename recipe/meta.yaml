@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - pkgconfig
+    - pkg-config
   host:
     - python
     - pip
