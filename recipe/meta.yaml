@@ -26,6 +26,8 @@ requirements:
   run:
     - python
     - pip
+    - pybind
+    - pytest
     - numpy
     - kim-api
 
