@@ -25,12 +25,17 @@ requirements:
     - kim-api
   run:
     - python
+    - pip
+    - pybind11
+    - pytest
     - numpy
     - kim-api
 
 test:
   imports:
     - kimpy
+  commands:
+    - pip check
 
 about:
   home: https://github.com/openkim/kimpy
