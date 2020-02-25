@@ -25,6 +25,7 @@ requirements:
     - kim-api
   run:
     - python
+    - pip
     - numpy
     - kim-api
 
