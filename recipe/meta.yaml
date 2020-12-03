@@ -1,5 +1,5 @@
 {% set name = "kimpy" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4d94a34fd8712ec2c9147dc95d68589f57d7173ffc6a6dec448a9a14c554c54a
+  sha256: de24b22ef0c9e9333bfa123973fb69ec0d71f0342d205414152492c656d994b7
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,14 +22,14 @@ requirements:
     - python
     - pip
     - pybind11
-    - kim-api
+    - kim-api =2.2.0
   run:
     - python
     - pip
     - pybind11
     - pytest
     - numpy
-    - kim-api
+    - kim-api =2.2.0
 
 test:
   imports:
@@ -42,7 +42,7 @@ about:
   license: CDDL-1.0
   license_family: OTHER
   license_file: LICENSE.CDDL
-  summary: 'Python interface to the KIM API'
+  summary: Python interface to the KIM API
 
   description: |
     kimpy is a Python interface to the KIM API.
