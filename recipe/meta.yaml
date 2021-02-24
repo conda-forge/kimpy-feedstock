@@ -10,7 +10,7 @@ source:
   sha256: a6432ec96bfc4d4afd741ce941a3ff467d27c1553f3030f733d594e3489d775a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,14 +22,14 @@ requirements:
     - python
     - pip
     - pybind11
-    - kim-api =2.2.0
+    - kim-api =2.2.1
   run:
     - python
     - pip
     - pybind11
     - pytest
     - numpy
-    - kim-api =2.2.0
+    - kim-api =2.2.1
 
 test:
   imports:
