@@ -1,5 +1,5 @@
 {% set name = "kimpy" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 641bc2b083b0324ce4698612494927ab041c1e90bb6f73496443a4966d4f5409
+  sha256: b6670eff6e36bc63836b43073ad302881a88dc509086758f5781b2ed9227444e
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
