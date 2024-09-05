@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - pkg-config
+    - setuptools
   host:
     - python
     - pip
