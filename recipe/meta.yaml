@@ -21,11 +21,11 @@ requirements:
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - pkg-config
-    - setuptools
+    - pkg-config 
   host:
     - python
     - pip
+    - setuptools
     - pybind11
     - kim-api =2.3.0
   run:
