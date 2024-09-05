@@ -10,7 +10,7 @@ source:
   sha256: 3ab9ab64179cdf8b7d41704330d12bbb78461792664354e9e9144098709bc636
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - pkg-config
   host:
     - python
