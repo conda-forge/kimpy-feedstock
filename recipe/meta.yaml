@@ -27,14 +27,14 @@ requirements:
     - pip
     - setuptools
     - pybind11
-    - kim-api =2.3.0
+    - kim-api >=2.3.0
   run:
     - python
     - pip
     - pybind11
     - pytest
     - numpy
-    - kim-api =2.3.0
+    - kim-api >=2.3.0
 
 test:
   imports:
