@@ -269,4 +269,5 @@ Feedstock Maintainers
 
 * [@ilia-nikiforov-umn](https://github.com/ilia-nikiforov-umn/)
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@mjwen](https://github.com/mjwen/)
 
