@@ -13,18 +13,17 @@ source:
   sha256: 7287c4696e42f27fa32f93da67162de2a58d92b2d93a62efd7da33d595e878df
 
 build:
-  number: 1
+  number: 2
   skip: win
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
-    - if: build_platform != target_platform
-      then: pybind11
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - pybind11
     - ${{ compiler('cxx') }}
     - ${{ stdlib("c") }}
     - pkg-config
